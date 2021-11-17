@@ -1,0 +1,90 @@
+#include <iostream>
+#include <Windows.h>
+using namespace std;
+
+void getSizeInt() {
+	int i;
+	cout << "Размер: " << sizeof(i) << " байта";
+}
+void getSizeChar() {
+	char c;
+	cout << "Размер: " << sizeof(c) << " байта";
+}
+void getSizeDouble() {
+	double d;
+	cout << "Размер: " << sizeof(d) << " байта";
+}
+void getSizeFloat() {
+	float f;
+	cout << "Размер: " << sizeof(f) << " байта";
+}
+void getSizeBool() {
+	bool b;
+	cout << "Размер: " << sizeof(b) << " байта";
+}
+void showMessage() {
+	cout << "Привет я функция";
+}
+void showMessage5x5() {
+	cout << "Текстура:";
+	char texture;
+	cin >> texture;
+	for (int x = 0; x < 5; x++) {
+		for (int y = 0; y < 5; y++) {
+			cout << texture;
+		}
+		cout << endl;
+	}
+}
+
+
+int main() {
+	setlocale(0, "");
+	cout << "Программа: Функции\n";
+	cout << "[1] Очищение консоли\n";
+	cout << "[2] Изменить цвет фона\n";
+	cout << "[3] Изменить цвет текста\n";
+	cout << "[4] Размер int\n";
+	cout << "[5] Размер char\n";
+	cout << "[6] Размер double\n";
+	cout << "[7] Размер float\n";
+	cout << "[8] Размер bool\n";
+	cout << "[9] Вывод сообщения “Привет я функция”\n";
+	cout << "[10] Вывод квадрата 5x5\n";
+	cout << "Введите: ";
+	int vod;
+	cin >> vod;
+	switch(vod) {
+	case 1:
+		system("cls");
+		break;
+	case 2:
+		system("color 37");
+		break;
+	case 3:
+		system("color 04");
+		break;
+	case 4:
+		getSizeInt();
+		break;
+	case 5:
+		getSizeChar();
+		break;
+	case 6:
+		getSizeDouble();
+		break;
+	case 7:
+		getSizeFloat();
+		break;
+	case 8:
+		getSizeBool();
+		break;
+	case 9:
+		showMessage();
+		break;
+	case 10:
+		showMessage5x5();
+		break;
+	}
+	int _; cin >> _;
+}
