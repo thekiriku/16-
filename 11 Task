@@ -1,0 +1,194 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	setlocale(0, "");
+	int figure, type, length2, size, width, high;
+	int length1 = 0;
+	char texture;
+	cout << "Геометрические фигуры!" << endl;
+	cout << "[1] Линия" << endl;
+	cout << "[2] Квадрат" << endl;
+	cout << "[3] Прямоугольник" << endl;
+	cout << "[4] Треугольник" << endl;
+	cout << "[5] Решетка" << endl;
+	cout << "[6] Крестик" << endl;
+	cout << "[7] Плюс" << endl;
+	cout << "Выберите фигуру: ";
+	cin >> figure;
+	system("cls");
+
+	if (figure == 1) {
+		cout << "Фигура: Линия " << endl;
+		cout << "[1] Горизонтальная" << endl;
+		cout << "[2] Вертикальная" << endl;
+		cout << "Выберите тип:" << endl;
+		cin >> type;
+
+		cout << "Введите длину: ";
+		cin >> length2;
+
+		cout << "Введите текстуру: ";
+		cin >> texture;
+
+		cout << "Результат:" << endl;
+
+		switch (type) {
+		case 1:
+			while (length1 < length2) {
+				cout << texture;
+				length1++;
+			}
+			break;
+		case 2:
+			while (length1 < length2) {
+				cout << texture << endl;
+				length1++;
+			}
+			break;
+		default:
+			cout << "Такого типа фигуры не существует";
+			break;
+		}
+	}
+	else if (figure == 2) {
+		cout << "Фигура: Квадрат " << endl;
+		cout << "[1] Заполненный" << endl;
+		cout << "[2] Пустой" << endl;
+		cout << "Выберите тип: ";
+		cin >> type;
+
+		cout << "Размер: ";
+		cin >> size;
+
+		cout << "Текстура квадрата: ";
+		cin >> texture;
+
+		cout << "Результат:" << endl;
+
+		switch (type) {
+		case 1:
+			for (int y = 0; y < size; y++) {
+				for (int x = 0; x < size; x++) {
+					cout << texture << " ";
+				}
+				cout << "\n";
+			}
+			break;
+
+		case 2:
+			for (int y = 0; y < size; y++) {
+				for (int x = 0; x < size; x++) {
+					if (y == 0 || y == size - 1 || x == 0 || x == size - 1) {
+						cout << texture << " ";
+					}
+					else {
+						cout << "  ";
+					}
+				}
+				cout << "\n";
+			}
+			break;
+		}
+	}
+	else if (figure == 3) {
+		cout << "Фигура: Прямоугольник" << endl;
+		cout << "[1] Заполненный" << endl;
+		cout << "[2] Пустой" << endl;
+		cout << "Выберите тип: ";
+		cin >> type;
+
+		cout << "Ширина: ";
+		cin >> width;
+		cout << "Высота: ";
+		cin >> high;
+		cout << "Текстура: ";
+		cin >> texture;
+
+		cout << "Результат:" << endl;
+		switch (type) {
+		case 1:
+			for (int y = 0; y < high; y++) {
+				cout << "\t";
+				for (int x = 0; x < width; x++) {
+					cout << texture << " ";
+				}
+				cout << "\n";
+			}
+			break;
+		case 2:
+			for (int y = 0; y < high; y++) {
+				for (int x = 0; x < width; x++) {
+					if (y == 0 || y == high - 1 || x == 0 || x == width - 1) {
+						cout << texture << " ";
+					}
+					else {
+						cout << "  ";
+					}
+				}
+				cout << "\n";
+			}
+			break;
+		}
+	}
+	else if (figure == 4) {
+		cout << "Фигура: Треугольник" << endl;
+		cout << "[1] Заполненный" << endl;
+		cout << "[2] Пустой" << endl;
+		cout << "Выберите тип: ";
+		cin >> type;
+		cout << "Высота: ";
+		cin >> high;
+		cout << "Текстура: ";
+		cin >> texture;
+
+		cout << "Результат: " << endl;
+		switch (type) {
+		case 1:
+			for (int y = 0; y < high; ++y)
+			{
+				for (int x = high; x > y; --x) {
+					cout << ' ';
+				}
+				for (int x = 0; x < 2 * y - 1; ++x) {
+					cout << texture;
+				}
+				cout << endl;
+			}
+			break;
+		case 2:
+			for (int y = 0; y < high; y++) {
+				for (int x = 0; x < high; x++) {
+					if (y == high/2 || x == (high/2) + y || x == (high/2) - y) {
+						cout << texture;
+					}
+					else {
+						cout << " ";
+					}
+				}
+				cout << endl;
+			}
+			break;
+		}
+	}
+	else if (figure == 5) {
+		cout << "Фигура: Решетка" << endl;
+		cout << "Размер: ";
+		cin >> size;
+		cout << "Текстура: ";
+		cin >> texture;
+
+		cout << "Результат: " << endl;
+
+		for (int y = 0; y < size; y++) {
+			for (int x = 0; x < size; x++) {
+				if (y % 2 == 1 || x % 2 == 1) {
+					cout << texture;
+				}
+				else {
+					cout << " ";
+				}
+			}
+			cout << endl;
+		}
+	}
