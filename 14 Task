@@ -1,0 +1,60 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int sum[10] = { 54, 67, 765, 54, 43, 76, 875, 43543, 6546, 654 };
+	cout << "int:\n";
+	for (int s = 0; s < 10; s++) {
+		cout << sum[s] << ",";
+	}
+	cout << "\n\n";
+
+	short hawty[10] = { 543, 2354, 564, 1, 54, 9807, 654, 120, 7032, 1235 };
+	cout << "short:\n";
+	for (int h = 0; h < 10; h++) {
+		cout << hawty[h] << ",";
+	}
+	cout << "\n\n";
+
+	long cupcake[10] = { 6729, 8, 10, 13, 756, 98, 100, 101, 666, 69 };
+	cout << "long:\n";
+	for (int c = 0; c < 10; c++) {
+		cout << cupcake[c] << ",";
+	}
+	cout << "\n\n";
+
+	float boat[10] = { 22.77, 2.9, 3.6666, 1.1, 59.900, 7.8, 5.6, 4.20, 4.5, 1.43 };
+	cout << "float:\n";
+	for (int b = 0; b < 10; b++) {
+		cout << boat[b] << ",";
+	}
+	cout << "\n\n";
+
+	double twins[10] = { 9.9, 54.44, 34.35, 67.67, 88.88, 9.8, 6.5, 8.90, 1.20, 435.687 };
+	cout << "double:\n";
+	for (int t = 0; t < 10; t++) {
+		cout << twins[t] << ",";
+	}
+	cout << "\n\n";
+
+	char symbol[10] = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'k', 'l', 'm'};
+	cout << "char:\n";
+	for (int y = 0; y < 10; y++) {
+		cout << symbol[y] << ",";
+	}
+	cout << "\n\n";
+
+	bool tol[10] = { true, false, 1, 0, 0, 0, false, true, 1, 1 };
+	cout << "bool:\n";
+	for (int t = 0; t < 10; t++) {
+		cout << tol[t] << ",";
+	}
+	cout << "\n\n";
+
+	string stroka[10] = { "asd", "ftrt", "ewr43", "c0xvn", "ewqed", "31ffs", "cfsdc", "j6e0", "gsd89", "gfdbn7"};
+	cout << "string:\n";
+	for (int k = 0; k < 10; k++) {
+		cout << stroka[k] << ",";
+	}
+	cout << "\n\n";
+}
