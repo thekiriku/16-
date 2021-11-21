@@ -1,0 +1,47 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	setlocale(0, "");
+	int figure, type, length2, size, width, high;
+	int length1 = 0;
+	char texture;
+	cout << "Геометрические фигуры!" << endl;
+	cout << "[1] Линия" << endl;
+	cout << "Выберите фигуру: ";
+	cin >> figure;
+	system("cls");
+
+	if (figure == 1) {
+		cout << "Фигура: Линия " << endl;
+		cout << "[1] Горизонтальная" << endl;
+		cout << "[2] Вертикальная" << endl;
+		cout << "Выберите тип:" << endl;
+		cin >> type;
+
+		cout << "Введите длину: ";
+		cin >> length2;
+
+		cout << "Введите текстуру: ";
+		cin >> texture;
+
+		cout << "Результат:" << endl;
+
+		switch (type) {
+		case 1:
+			while (length1 < length2) {
+				cout << texture;
+				length1++;
+			}
+			break;
+		case 2:
+			while (length1 < length2) {
+				cout << texture << endl;
+				length1++;
+			}
+			break;
+		default:
+			cout << "Такого типа фигуры не существует";
+			break;
+		}
+	}
