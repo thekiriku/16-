@@ -12,8 +12,6 @@ int main() {
 	cout << "[3] Прямоугольник" << endl;
 	cout << "[4] Треугольник" << endl;
 	cout << "[5] Решетка" << endl;
-	cout << "[6] Крестик" << endl;
-	cout << "[7] Плюс" << endl;
 	cout << "Выберите фигуру: ";
 	cin >> figure;
 	system("cls");
