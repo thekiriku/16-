@@ -1,0 +1,152 @@
+#include <iostream>
+#include <Windows.h>
+using namespace std;
+
+int main() {
+	setlocale(0, "");
+
+	int translate;
+	cout << "Переводчик" << endl;
+	cout << "[1] Русские слова" << endl;
+	cout << "[2] Английские слова" << endl;
+	cout << "[3] Выйти" << endl;
+	cout << "Введите: ";
+	int enter;
+	cin >> enter;
+	switch (enter) {
+	case 1:
+		cout << "Перевод русских слов" << endl;
+		cout << "[1] Лестница" << endl;
+		cout << "[2] Компьютер" << endl;
+		cout << "[3] Переводчик" << endl;
+		cout << "[4] Числа" << endl;
+		cout << "[5] Печенья" << endl;
+		cout << "[6] Мечь" << endl;
+		cout << "[7] Щит" << endl;
+		cout << "[8] Магия" << endl;
+		cout << "[9] Клавиатура" << endl;
+		cout << "[10] Имя" << endl;
+		cout << "[11] Фамилия" << endl;
+		cout << "[12] Город" << endl;
+		cout << "[13] Кость" << endl;
+		cout << "[14] Машина" << endl;
+		cout << "[15] День" << endl;
+		cout << "Слово: ";
+		cin >> translate;
+		switch (translate) {
+		case 1:
+			cout << "Перевод: Лестница - Stairs";
+			break;
+		case 2:
+			cout << "Перевод: Компьютер - Computer";
+			break;
+		case 3:
+			cout << "Перевод: Переводчик - Translator";
+			break;
+		case 4:
+			cout << "Перевод: Числа - Numbers";
+			break;
+		case 5:
+			cout << "Перевод: Печенья - Cookies";
+			break;
+		case 6:
+			cout << "Перевод: Мечь - Sword";
+			break;
+		case 7:
+			cout << "Перевод: Щит - Shield";
+			break;
+		case 8:
+			cout << "Перевод: Магия - Magic";
+			break;
+		case 9:
+			cout << "Перевод: Клавиатура - Keyboard";
+			break;
+		case 10:
+			cout << "Перевод: Имя - Firstname";
+			break;
+		case 11:
+			cout << "Перевод: Фамилия - Lastname";
+			break;
+		case 12:
+			cout << "Перевод: Город - City";
+			break;
+		case 13:
+			cout << "Перевод: Кость - Bone";
+			break;
+		case 14:
+			cout << "Перевод: Машина - Car";
+			break;
+		case 15:
+			cout << "Перевод: День - Day";
+			break;
+		}
+		break;
+	case 2:
+		cout << "Перевод английских слов" << endl;
+		cout << "[1] Wife" << endl;
+		cout << "[2] Husband" << endl;
+		cout << "[3] Can" << endl;
+		cout << "[4] Divide" << endl;
+		cout << "[5] Screen" << endl;
+		cout << "[6] Model" << endl;
+		cout << "[7] Sweet" << endl;
+		cout << "[8] Bitter" << endl;
+		cout << "[9] Diamonds" << endl;
+		cout << "[10] Family" << endl;
+		cout << "[11] Seasons" << endl;
+		cout << "[12] Monday" << endl;
+		cout << "[13] Blue" << endl;
+		cout << "[14] Ruin" << endl;
+		cout << "[15] Bubblegum" << endl;
+		cout << "Слово: ";
+		cin >> translate;
+		switch (translate) {
+		case 1:
+			cout << "Перевод: Wife - Жена" << endl;
+			break;
+		case 2:
+			cout << "Перевод: Husband - Муж" << endl;
+			break;
+		case 3:
+			cout << "Перевод: Can - Банка" << endl;
+			break;
+		case 4:
+			cout << "Перевод: Divide - Делить" << endl;
+			break;
+		case 5:
+			cout << "Перевод: Screen - Экран" << endl;
+			break;
+		case 6:
+			cout << "Перевод: Model - Модель" << endl;
+			break;
+		case 7:
+			cout << "Перевод: Sweet - Сладкий" << endl;
+			break;
+		case 8:
+			cout << "Перевод: Bitter - Горький" << endl;
+			break;
+		case 9:
+			cout << "Перевод: Diamonds - Алмазы" << endl;
+			break;
+		case 10:
+			cout << "Перевод: Family - Семья" << endl;
+			break;
+		case 11:
+			cout << "Перевод: Seasons - Сезоны(года)" << endl;
+			break;
+		case 12:
+			cout << "Перевод: Monday - Понедельник" << endl;
+			break;
+		case 13:
+			cout << "Перевод: Blue - Синий" << endl;
+			break;
+		case 14:
+			cout << "Перевод: Ruin - Руины" << endl;
+			break;
+		case 15:
+			cout << "Перевод: Bubblegum - Жевачка" << endl;
+			break;
+		}
+		break;
+	}
+}
