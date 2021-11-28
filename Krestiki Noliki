@@ -182,7 +182,7 @@ void game(int size, int** map, int i, int j) {
 		system("cls");
 		while (win == true)
 		{
-			cout << "[Игра] Крестики-Нолики";
+			cout << "Крестики-Нолики";
 			cout << "\n\n";
 			for (int i = 0; i < v; i++)
 			{
@@ -206,12 +206,12 @@ void game(int size, int** map, int i, int j) {
 			}
 			if (turn == true)
 			{
-				cout << "[+] Ход Крестика: ";
+				cout << "Ход Крестика: ";
 				turn = false;
 			}
 			else
 			{
-				cout << "[+] Ход Нолика: ";
+				cout << "Ход Нолика: ";
 				turn = true;
 			}
 			cin >> turn1;
@@ -285,11 +285,11 @@ void game(int size, int** map, int i, int j) {
 			{
 				if (!turn == true) {
 
-					cout << "\x1b[92mПобеда крестиков!!!\x1b[0m" << endl;
+					cout << "\x1b[92mПобедил крестик\x1b[0m" << endl;
 					win = false;
 				}
 				else {
-					cout << "\x1b[92mПобеда ноликов!!!\x1b[0m" << endl;
+					cout << "\x1b[92mПобедил нолик\x1b[0m" << endl;
 					win = false;
 				}
 			}
@@ -305,7 +305,7 @@ void game(int size, int** map, int i, int j) {
 		system("cls");
 		while (win == true)
 		{
-			cout << "[Игра] Крестики-Нолики";
+			cout << "Крестики-Нолики";
 			cout << "\n\n";
 			for (int i = 0; i < v; i++)
 			{
@@ -329,12 +329,12 @@ void game(int size, int** map, int i, int j) {
 			}
 			if (turn == true)
 			{
-				cout << "[+] Ход Крестика: ";
+				cout << "Ход Крестика: ";
 				turn = false;
 			}
 			else
 			{
-				cout << "[+] Ход Нолика: ";
+				cout << "Ход Нолика: ";
 				turn = true;
 			}
 			cin >> turn1;
@@ -454,11 +454,11 @@ void game(int size, int** map, int i, int j) {
 			{
 				if (!turn == true) {
 
-					cout << "\x1b[92mПобеда крестиков!!!\x1b[0m" << endl;
+					cout << "\x1b[92mПобедил крестик\x1b[0m" << endl;
 					win = false;
 				}
 				else {
-					cout << "\x1b[92mПобеда ноликов!!!\x1b[0m" << endl;
+					cout << "\x1b[92mПобедил нолик\x1b[0m" << endl;
 					win = false;
 				}
 			}
@@ -521,12 +521,12 @@ void game(int size, int** map, int i, int j) {
 			}
 			if (turn == true)
 			{
-				cout << "[+] Ход Крестика: ";
+				cout << "Ход Крестика: ";
 				turn = false;
 			}
 			else
 			{
-				cout << "[+] Ход Нолика: ";
+				cout << "Ход Нолика: ";
 				turn = true;
 			}
 			cin >> turn1;
@@ -702,11 +702,11 @@ void game(int size, int** map, int i, int j) {
 			{
 				if (!turn == true) {
 
-					cout << "\x1b[92mПобеда крестиков!!!\x1b[0m" << endl;
+					cout << "\x1b[92mПобедил крестик\x1b[0m" << endl;
 					win = false;
 				}
 				else {
-					cout << "\x1b[92mПобеда ноликов!!!\x1b[0m" << endl;
+					cout << "\x1b[92mПобедил нолик\x1b[0m" << endl;
 					win = false;
 				}
 			}
@@ -728,11 +728,11 @@ void game(int size, int** map, int i, int j) {
 			{
 				if (!turn == true) {
 
-					cout << "\x1b[92mПобеда крестиков!!!\x1b[0m" << endl;
+					cout << "\x1b[92mПобедил крестик\x1b[0m" << endl;
 					win = false;
 				}
 				else {
-					cout << "\x1b[92mПобеда ноликов!!!\x1b[0m" << endl;
+					cout << "\x1b[92mПобедил нолик\x1b[0m" << endl;
 					win = false;
 				}
 			}
