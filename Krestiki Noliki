@@ -98,7 +98,7 @@ void colorX() {
 	case 5:
 		x = "\x1b[31mx\x1b[0m";
 		break;
-	deafult:
+	default:
 		cout << "Такого цвета не существует";
 		Sleep(5000);
 		break;
@@ -132,7 +132,7 @@ void colorO() {
 	case 5:
 		o = "\x1b[35mo\x1b[0m";
 		break;
-	deafult:
+	default:
 		cout << "Такого цвета не существует";
 		Sleep(5000);
 		break;
